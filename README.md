@@ -20,6 +20,21 @@ require('require-cache')();
 
 That's it!
 
+Benchmark your node startup script with and without it and see if there's an improvement, e.g.:
+
+``` javascript
+require('require-cache')(); // and comment this out to get normal execution time
+
+var time = new Date;
+
+require('commander');
+require('express');
+require('mocha');
+require('chai');
+
+console.log(((new Date).getTime() - time.getTime()) + 'ms');
+```
+
 ## License
 
 MIT
