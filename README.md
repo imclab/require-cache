@@ -12,6 +12,8 @@ npm install require-cache
 
 ## Quick Start
 
+Put this at the top of your startup script (if you run `node server.js`, then put it at the top of `server.js`):
+
 ``` javascript
 require('require-cache')();
 ```
