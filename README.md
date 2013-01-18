@@ -33,6 +33,10 @@ require('mocha');
 require('chai');
 
 console.log(((new Date).getTime() - time.getTime()) + 'ms');
+// with require-cache:
+// 74ms, 73ms, 73ms, 73ms
+// without require-cache:
+// 120ms, 119ms, 122ms, 119ms
 ```
 
 ## License
